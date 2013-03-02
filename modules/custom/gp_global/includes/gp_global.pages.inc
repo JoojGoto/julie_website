@@ -14,7 +14,7 @@ function gp_global_page_front() {
   $project_nid_list = gp_global_get_front_project_nidlist();
   $nodes = node_load_multiple($project_nid_list);
 
-  $out = '';
+  $out = array();
 
   // Render each node individually so we can append a link.
   $l_options = array(
@@ -26,7 +26,8 @@ function gp_global_page_front() {
     $node_view = node_view($node, 'teaser');
 
     $node_view['title']['#prefix'] = l('', $path_alias, $l_options);
-    $out .= render($node_view);
+    $out[] = $node_view;
   }
+
   return $out;
 }
