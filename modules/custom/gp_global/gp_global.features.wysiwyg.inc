@@ -64,7 +64,6 @@ function gp_global_wysiwyg_default_profiles() {
       'css_path' => '',
       'css_classes' => '',
     ),
-    'metatags' => array(),
   );
 
   return $profiles;

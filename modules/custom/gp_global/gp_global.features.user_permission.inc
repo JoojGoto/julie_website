@@ -14,10 +14,10 @@ function gp_global_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -33,8 +33,8 @@ function gp_global_user_default_permissions() {
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'webform',
   );
@@ -43,10 +43,10 @@ function gp_global_user_default_permissions() {
   $permissions['access coffee'] = array(
     'name' => 'access coffee',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'coffee',
   );
@@ -55,8 +55,8 @@ function gp_global_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -65,10 +65,10 @@ function gp_global_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -77,10 +77,10 @@ function gp_global_user_default_permissions() {
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'contextual',
   );
@@ -89,10 +89,10 @@ function gp_global_user_default_permissions() {
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'dashboard',
   );
@@ -101,10 +101,10 @@ function gp_global_user_default_permissions() {
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'overlay',
   );
@@ -113,9 +113,9 @@ function gp_global_user_default_permissions() {
   $permissions['access own webform results'] = array(
     'name' => 'access own webform results',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'editor' => 'editor',
     ),
     'module' => 'webform',
   );
@@ -124,7 +124,7 @@ function gp_global_user_default_permissions() {
   $permissions['access own webform submissions'] = array(
     'name' => 'access own webform submissions',
     'roles' => array(
-      0 => 'authenticated user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'webform',
   );
@@ -133,10 +133,10 @@ function gp_global_user_default_permissions() {
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -145,8 +145,8 @@ function gp_global_user_default_permissions() {
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -155,10 +155,10 @@ function gp_global_user_default_permissions() {
   $permissions['access toolbar'] = array(
     'name' => 'access toolbar',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'toolbar',
   );
@@ -167,7 +167,7 @@ function gp_global_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      0 => 'authenticated user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -211,7 +211,7 @@ function gp_global_user_default_permissions() {
   $permissions['administer google analytics'] = array(
     'name' => 'administer google analytics',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'googleanalytics',
   );
@@ -241,8 +241,8 @@ function gp_global_user_default_permissions() {
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'menu',
   );
@@ -258,8 +258,8 @@ function gp_global_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -275,8 +275,8 @@ function gp_global_user_default_permissions() {
   $permissions['administer page titles'] = array(
     'name' => 'administer page titles',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'page_title',
   );
@@ -285,7 +285,7 @@ function gp_global_user_default_permissions() {
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'pathauto',
   );
@@ -301,7 +301,7 @@ function gp_global_user_default_permissions() {
   $permissions['administer shortcuts'] = array(
     'name' => 'administer shortcuts',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'shortcut',
   );
@@ -310,7 +310,7 @@ function gp_global_user_default_permissions() {
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'system',
   );
@@ -319,7 +319,7 @@ function gp_global_user_default_permissions() {
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'system',
   );
@@ -328,8 +328,8 @@ function gp_global_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'taxonomy',
   );
@@ -345,7 +345,7 @@ function gp_global_user_default_permissions() {
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'path',
   );
@@ -354,7 +354,7 @@ function gp_global_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'user',
   );
@@ -370,8 +370,8 @@ function gp_global_user_default_permissions() {
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -380,8 +380,8 @@ function gp_global_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -390,7 +390,7 @@ function gp_global_user_default_permissions() {
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
-      0 => 'authenticated user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -399,7 +399,7 @@ function gp_global_user_default_permissions() {
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
-      0 => 'authenticated user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -408,8 +408,8 @@ function gp_global_user_default_permissions() {
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'path',
   );
@@ -425,8 +425,8 @@ function gp_global_user_default_permissions() {
   $permissions['customize shortcut links'] = array(
     'name' => 'customize shortcut links',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'shortcut',
   );
@@ -435,7 +435,7 @@ function gp_global_user_default_permissions() {
   $permissions['delete all webform submissions'] = array(
     'name' => 'delete all webform submissions',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'webform',
   );
@@ -458,7 +458,7 @@ function gp_global_user_default_permissions() {
   $permissions['delete own webform submissions'] = array(
     'name' => 'delete own webform submissions',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'webform',
   );
@@ -467,9 +467,9 @@ function gp_global_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -478,7 +478,7 @@ function gp_global_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'webform',
   );
@@ -501,7 +501,7 @@ function gp_global_user_default_permissions() {
   $permissions['edit own webform submissions'] = array(
     'name' => 'edit own webform submissions',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'webform',
   );
@@ -531,9 +531,9 @@ function gp_global_user_default_permissions() {
   $permissions['publish_content'] = array(
     'name' => 'publish_content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'editor' => 'editor',
     ),
     'module' => 'gp_global',
   );
@@ -542,9 +542,9 @@ function gp_global_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -560,8 +560,8 @@ function gp_global_user_default_permissions() {
   $permissions['set page title'] = array(
     'name' => 'set page title',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'page_title',
   );
@@ -570,8 +570,8 @@ function gp_global_user_default_permissions() {
   $permissions['switch shortcut sets'] = array(
     'name' => 'switch shortcut sets',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'shortcut',
   );
@@ -594,10 +594,10 @@ function gp_global_user_default_permissions() {
   $permissions['use imageeditor'] = array(
     'name' => 'use imageeditor',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'imageeditor',
   );
@@ -606,10 +606,10 @@ function gp_global_user_default_permissions() {
   $permissions['use imageeditor_imagefield'] = array(
     'name' => 'use imageeditor_imagefield',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'imageeditor_imagefield',
   );
@@ -639,10 +639,10 @@ function gp_global_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -651,10 +651,10 @@ function gp_global_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -663,10 +663,10 @@ function gp_global_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'author',
-      2 => 'contributor',
-      3 => 'editor',
+      'administrator' => 'administrator',
+      'author' => 'author',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
