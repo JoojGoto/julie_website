@@ -56,10 +56,10 @@ function gp_global_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
-            'trim_length' => 600,
+            'trim_length' => '144',
           ),
           'type' => 'text_summary_or_trimmed',
-          'weight' => 0,
+          'weight' => '1',
         ),
         'title_only' => array(
           'label' => 'hidden',
@@ -136,10 +136,14 @@ function gp_global_field_default_fields() {
           'weight' => '1',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => 'content',
+            'image_style' => 'front_grid_wide',
+          ),
+          'type' => 'image',
+          'weight' => '2',
         ),
         'title_only' => array(
           'label' => 'above',
