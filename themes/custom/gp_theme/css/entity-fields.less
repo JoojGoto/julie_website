@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Entities and field styles.
+ */
+
+/* Project teaser view mode */
+.node-project.view-mode-teaser {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 220px;
+  @border-box;
+  padding: 85px 20px 0;
+  margin: 0 20px 20px 0;
+  text-align: center;
+
+  .field-item {
+    img {
+      /* Give a very large radius to produce a circle */
+      @border-radius(500px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .field-name-body,
+  .field-name-title {
+    z-index: 100;
+    position: relative;
+    visibility: hidden;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .field-name-body,
+    .field-name-title {
+      visibility: visible;
+    }
+  }
+}
