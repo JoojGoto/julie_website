@@ -36,7 +36,26 @@ function gp_global_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__project';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'title_only' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
@@ -713,8 +732,8 @@ function gp_global_strongarm() {
       'modules/update/update.css' => 0,
     ),
     'alpha_debug_block_toggle' => 1,
-    'alpha_debug_block_active' => 1,
-    'alpha_debug_grid_toggle' => 1,
+    'alpha_debug_block_active' => 0,
+    'alpha_debug_grid_toggle' => 0,
     'alpha_debug_grid_active' => 1,
     'alpha_debug_grid_roles' => array(
       1 => '1',

@@ -13,6 +13,6 @@ function gp_global_get_front_project_nidlist() {
     ->range(0, 20);
 
   $results = $efq->execute();
-  $ret = array_keys($results['node']);
+  $ret = isset($results['node']) ? array_keys($results['node']) : array();
   return $ret;
 }
