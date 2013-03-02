@@ -11,6 +11,7 @@ projects[tao][subdir] = "contrib"
 
 projects[omega][version] = "3.1"
 projects[omega][subdir] = "contrib"
+projects[omega][patch][] = http://drupal.org/files/preprocess-aggregation-1627478-14.patch
 
 ; Contrib
 
