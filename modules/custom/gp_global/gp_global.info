@@ -163,6 +163,7 @@ features[variable][] = node_admin_theme
 features[variable][] = node_options_project
 features[variable][] = node_preview_project
 features[variable][] = node_submitted_project
+features[variable][] = nodeformscols_field_placements_project_default
 features[variable][] = page_title_default
 features[variable][] = page_title_front
 features[variable][] = page_title_pager_pattern

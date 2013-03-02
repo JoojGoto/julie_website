@@ -15,6 +15,11 @@ function gp_global_block_info() {
     'info' => t('Blank'),
   );
 
+  $blocks['sidebar_projects_list'] = array(
+    'info' => t('Sidebar projects list'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
   return $blocks;
 }
 
@@ -54,4 +59,21 @@ function gp_global_block_view_blank() {
   $content .= '<h2>Blank</h2>';
 
   return $block;
+}
+
+/**
+ * Renders a list of content for the front page.
+ */
+function gp_global_block_view_sidebar_projects_list() {
+  $project_nid_list = gp_global_get_front_project_nidlist();
+  $nodes = node_load_multiple($project_nid_list);
+
+  // No need to render a full node display mode, just need linked titles.
+  $ret = '';
+  foreach($nodes as $node) {
+    $path_alias = drupal_lookup_path('alias', 'node/' . $node->nid);
+    $ret .= l($node->title, $path_alias);
+  }
+
+  return $ret;
 }
