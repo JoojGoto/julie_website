@@ -1,0 +1,4 @@
+Since you probably don't want your Distro Feature to be called "gp_global" and would prefer it to be something a little more project-specific, you might want to edit a lot of these files.
+
+I would suggest that instead of attempting something like a direct find-and-replace, you use a tool like Features Clone to create a copy of this module and then manually drop it into the correct place. http://drupal.org/project/features_clone
+

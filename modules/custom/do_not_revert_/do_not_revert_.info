@@ -1,0 +1,45 @@
+name = Do Not Revert!
+description = Things that shouldn't be reverted without very good reason. Included here so they aren't accidentally exported elsewhere.
+core = 7.x
+version = 1.x-dev
+package = Features
+php = 5.2.4
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = php
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[filter][] = php_code
+features[filter][] = plain_text
+features[variable][] = clean_url
+features[variable][] = context_block_rebuild_needed
+features[variable][] = cron_key
+features[variable][] = cron_last
+features[variable][] = css_js_query_string
+features[variable][] = ctools_last_cron
+features[variable][] = drupal_http_request_fails
+features[variable][] = drupal_private_key
+features[variable][] = features_codecache
+features[variable][] = features_ignored_orphans
+features[variable][] = features_semaphore
+features[variable][] = filter_fallback_format
+features[variable][] = install_profile
+features[variable][] = install_task
+features[variable][] = install_time
+features[variable][] = less_dir
+features[variable][] = menu_expanded
+features[variable][] = menu_masks
+features[variable][] = path_alias_whitelist
+features[variable][] = site_mail
+features[variable][] = site_name
+features[variable][] = site_slogan
+features[variable][] = update_last_check
+features[variable][] = update_notify_emails
+
+
+; Information added by drush on 2013-03-02
+version = "unknown"
+project = "gp_profile"
+datestamp = "1362210173"
+

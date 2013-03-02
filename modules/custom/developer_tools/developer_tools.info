@@ -1,0 +1,33 @@
+name = Developer Tools
+description = Settings + modules that are useful in a dev but harmful in production. Disable orphaned dependencies when done.
+core = 7.x
+version = 1.x-dev
+package = Features
+php = 5.2.4
+dependencies[] = context_ui
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = environment_indicator
+dependencies[] = features
+dependencies[] = field_ui
+dependencies[] = strongarm
+dependencies[] = views_ui
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[user_permission][] = access devel information
+features[user_permission][] = access environment indicator
+features[user_permission][] = execute php code
+features[user_permission][] = switch users
+features[variable][] = environment_indicator_color
+features[variable][] = environment_indicator_enabled
+features[variable][] = environment_indicator_margin
+features[variable][] = environment_indicator_position
+features[variable][] = environment_indicator_suppress_pages
+features[variable][] = environment_indicator_text
+
+
+; Information added by drush on 2013-03-02
+version = "unknown"
+project = "gp_profile"
+datestamp = "1362210173"
+

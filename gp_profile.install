@@ -1,0 +1,41 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Adapted from drupal_rewrite_settings() to build something Aegir friendly
+ */
+function gp_profile_write_local_settings($settings = array()) {
+  drupal_static_reset('conf_path');
+  $settings_file = conf_path(FALSE) . '/' . 'local.settings.php';
+
+    $buffer = "<?php\n\n";
+    
+    // Add required settings that were missing from settings.php.
+    foreach ($settings as $setting => $data) {
+        $buffer .= "\$$setting = " . var_export($data, TRUE) . ";\n";
+    }
+
+      $fp = fopen(DRUPAL_ROOT . '/' . $settings_file, 'w');
+      if ($fp && fwrite($fp, $buffer) === FALSE) {
+        throw new Exception(st('Failed to modify %settings. Verify the file permissions.', array('%settings' => $settings_file)));
+      }
+
+} 
+
+/**
+ * Implements hook_install()
+ */
+function gp_profile_install() {
+  // Our custom setup code for anything we can't manage through the info file
+  
+  /* write some settings for filecache into our local settings file */
+  $settings = array();
+  $settings['conf[\'cache_backends\']'] = array(drupal_get_path('module', 'filecache') . '/filecache.inc');
+  $settings['conf[\'cache_default_class\']'] = 'DrupalFileCache';
+  $settings['conf[\'filecache_directory\']'] = '/tmp/filecache-' . substr(conf_path(), 6);
+  $settings['conf[\'page_cache_invoke_hooks\']'] = TRUE;
+
+  gp_profile_write_local_settings($settings);
+}

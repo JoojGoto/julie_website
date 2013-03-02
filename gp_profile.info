@@ -1,0 +1,149 @@
+name = gp_profile
+description = A template for a working Drupal 7 Install Profile that can be easily extended for clients.
+core = 7.x
+version = 1.x-dev
+
+; base = base_d7_profile
+
+; Need this or we won't be able to build the profile at all
+libraries[profiler][download][type] = "get"
+libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
+
+theme = gp_theme
+
+; Enable profile specific modules
+dependencies[] = gp_global
+dependencies[] = developer_tools
+
+
+; -- Users --
+
+users[test_administrator][uid] = 2
+users[test_administrator][name] = test_administrator
+users[test_administrator][mail] = dev+test_administrator@godeldesign.com
+users[test_administrator][roles] = administrator
+users[test_administrator][status] = 1
+
+users[test_editor][uid] = 3
+users[test_editor][name] = test_editor
+users[test_editor][mail] = dev+test_editor@godeldesign.com
+users[test_editor][roles] = editor
+users[test_editor][status] = 1
+
+users[test_author][uid] = 4
+users[test_author][name] = test_author
+users[test_author][mail] = dev+test_author@godeldesign.com
+users[test_author][roles] = author
+users[test_author][status] = 1
+
+users[test_contributor][uid] = 5
+users[test_contributor][name] = test_contributor
+users[test_contributor][mail] = dev+test_contributor@godeldesign.com
+users[test_contributor][roles] = contributor
+users[test_contributor][status] = 1
+
+users[test_user][uid] = 6
+users[test_user][name] = test_user
+users[test_user][mail] = dev+test_user@godeldesign.com
+users[test_user][status] = 1
+
+; Base declarations below here ---
+
+; -- Dependencies --
+
+; Custom dependencies
+dependencies[] = gd_deny_legacy_browsers
+
+; Core - Optional
+
+dependencies[] = menu
+dependencies[] = path
+dependencies[] = image
+dependencies[] = php
+dependencies[] = taxonomy
+dependencies[] = field_ui
+dependencies[] = number
+dependencies[] = file
+dependencies[] = options
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = contextual
+dependencies[] = shortcut
+dependencies[] = dashboard
+dependencies[] = prod_check
+
+; Performance
+
+dependencies[] = filecache
+
+
+; Contrib dependencies
+
+; CCK
+
+; TODO: http://drupal.org/project/entityreference
+; dependencies[] = nodereference
+; dependencies[] = userreference
+
+; Chaos Tools
+dependencies[] = ctools
+dependencies[] = page_manager
+
+; Features
+dependencies[] = features
+
+; Filefield Paths
+dependencies[] = filefield_paths
+
+; Filefield Sources
+dependencies[] = filefield_sources
+
+dependencies[] = smartcrop
+
+; Node Form Columns
+dependencies[] = nodeformcols
+
+; Other
+dependencies[] = less
+dependencies[] = menu_block
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = diff
+
+; Pressflow
+; dependencies[] = path_alias_cache
+
+; Statistics
+dependencies[] = googleanalytics
+
+; User Interface
+dependencies[] = jquery_update
+dependencies[] = wysiwyg
+
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+
+; Webform
+dependencies[] = webform
+
+; Context
+dependencies[] = context_ui
+dependencies[] = context
+
+; Devel
+dependencies[] = devel
+dependencies[] = devel_generate
+
+; -- Theme --
+
+; theme = omega
+
+
+; Information added by drush on 2013-03-02
+version = "unknown"
+project = "gp_profile"
+datestamp = "1362210173"
+

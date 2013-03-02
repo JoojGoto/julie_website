@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Code for the gp_global feature.
+ */
+
+include_once 'gp_global.features.inc';
+
+/**
+ * Include additional files based on currently enabled modules.
+ */
+$system_list = system_list('module_enabled');
+foreach ($system_list as $module => $module_info) {
+  if (file_exists($file = dirname(__FILE__) . "/includes/{$module}.inc")) {
+    require_once $file;
+  }
+}

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Do Not Revert! feature.
+ */
+
+include_once 'do_not_revert_.features.inc';

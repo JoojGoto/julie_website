@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+.container-12,
+.grid-12 {
+  width: 100%!important;
+}
+
+#browser-deny-wrapper {
+  position: absolute;
+  z-index: 100;
+  background-color: black;
+}
+
+#browser-deny {
+  width: 400px;
+  background-color: white;
+  left: 50%;
+  margin-left: -200px;
+  top: 150px;
+  display: block;
+  position: absolute;
+  z-index: 101;
+  padding: 30px;
+  text-align: center;
+  line-height: 1.33em;
+  zoom: 1; /* hasLayout lol */
+}
+
+#browser-deny strong {
+  font-weight: bold;
+}

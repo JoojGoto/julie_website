@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the gp_gallery feature.
+ */
+
+include_once 'gp_gallery.features.inc';
