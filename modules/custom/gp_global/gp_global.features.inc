@@ -21,3 +21,20 @@ function gp_global_ctools_plugin_api() {
     return array("version" => "1");
   }
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function gp_global_node_info() {
+  $items = array(
+    'project' => array(
+      'name' => t('Project'),
+      'base' => 'node_content',
+      'description' => t('A project to be displayed in the listing on the front page.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
