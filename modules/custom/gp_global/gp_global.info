@@ -52,6 +52,7 @@ dependencies[] = xmlsitemap_engines
 dependencies[] = xmlsitemap_menu
 dependencies[] = xmlsitemap_node
 datestamp = 1362210173
+features[context][] = project-sidebar
 features[ctools][] = context:context:3
 features[ctools][] = elysia_cron:default_elysia_cron_rules:1
 features[ctools][] = strongarm:strongarm:1
