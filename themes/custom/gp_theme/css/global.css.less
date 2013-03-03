@@ -6,3 +6,47 @@
 
 @import "stub.less";
 @import url(http://fonts.googleapis.com/css?family=Sintony:400,700);
+
+body {
+  .body-p;
+}
+
+html {
+  body {
+    a:link, a:visited {
+      text-decoration: none;
+      color: #525252;
+    }
+    a:hover {
+      color: #8A8A8A;
+    }
+  }
+}
+
+.node-project.view-mode-teaser {
+  &:hover {
+    img {
+      opacity: 0.5;
+        -webkit-transition: all 0.2s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.2s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.2s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.2s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+    }
+  }
+}
+
+#region-sidebar-first {
+  #block-system-main-menu {
+    ul, li {
+      list-style: none;
+    }
+  }
+}
+
+#block-gp-global-sidebar-projects-list {
+  a {
+    width: 100%;
+    display: block;
+    padding: 6px;
+  }
+}

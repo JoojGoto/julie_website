@@ -20,6 +20,11 @@ function gp_global_block_info() {
     'cache' => DRUPAL_CACHE_GLOBAL,
   );
 
+    $blocks['logo'] = array(
+    'info' => t('The logo and title'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
   return $blocks;
 }
 
@@ -76,4 +81,22 @@ function gp_global_block_view_sidebar_projects_list() {
   }
 
   return $ret;
+}
+
+
+/**
+ * Renders logo title and image.
+ */
+function gp_global_block_view_logo() {
+  $block = array();
+  // The block title.
+  $block['subject'] = 'Logo for sidebar';
+  // The content of the block.
+  $block['content'] = '';
+  // Save ourselves some typing; we'll be concatenating a lot to this variable.
+  $content = &$block['content'];
+
+  $content .= '<img src="' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo-image.jpg">';
+
+  return $block;
 }

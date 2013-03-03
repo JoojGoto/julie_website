@@ -26,11 +26,17 @@ function gp_global_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'gp_global-logo' => array(
+          'module' => 'gp_global',
+          'delta' => 'logo',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',
           'region' => 'sidebar_first',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
@@ -66,7 +72,7 @@ function gp_global_context_default_contexts() {
           'module' => 'gp_global',
           'delta' => 'sidebar_projects_list',
           'region' => 'sidebar_first',
-          'weight' => '-10',
+          'weight' => '10',
         ),
       ),
     ),
