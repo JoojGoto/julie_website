@@ -13,12 +13,15 @@ body {
 
 html {
   body {
-    a:link, a:visited {
+    a:link, a:active {
       text-decoration: none;
       color: #525252;
     }
     a:hover {
       color: #8A8A8A;
+    }
+    a:visited {
+      color: #CFCFCF;
     }
   }
 }
@@ -35,18 +38,69 @@ html {
   }
 }
 
+#block-gp-global-logo, #block-system-main-menu, #block-gp-global-sidebar-projects-list {
+  padding: 6px;
+  h2 {
+    display: none;
+  }
+  .menu, .content {
+    a {
+      padding: 6px;
+      display: block;
+    }
+  }
+}
+
+#block-system-main-menu {
+  color: #B0B0B0;
+  border-top: 1px solid #B0B0B0;
+  border-bottom: 1px solid #B0B0B0;
+  a:link, a:active {
+    color: #B0B0B0!important;
+  }
+}
+
 #region-sidebar-first {
+  padding-bottom: 20px;
   #block-system-main-menu {
     ul, li {
       list-style: none;
+      padding: 0;
+      margin: 0;
     }
   }
 }
 
 #block-gp-global-sidebar-projects-list {
-  a {
-    width: 100%;
-    display: block;
-    padding: 6px;
+  display: none;
+}
+
+#block-gp-global-sidebar-projects-list {
+  .content {
+    a {
+      width: 100%;
+      display: block;
+      padding: 6px;
+    }
   }
+}
+
+/* image sizing in mobile */
+.node-project.view-mode-teaser {
+  margin-left: 0px;
+  margin-bottom: 25px;
+  width: 380px;
+  height: 380px;
+  .field-item {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#block-system-main {
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
 }

@@ -96,7 +96,8 @@ function gp_global_block_view_logo() {
   // Save ourselves some typing; we'll be concatenating a lot to this variable.
   $content = &$block['content'];
 
-  $content .= '<img src="' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo-image.jpg">';
+  $content .= '<img src="/' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo-image.jpg" width="100%" height="auto">
+    <img src="/' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo.png" width="100%" height="auto">';
 
   return $block;
 }
