@@ -29,7 +29,7 @@ function gp_global_context_default_contexts() {
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',
-          'region' => 'menu',
+          'region' => 'sidebar_first',
           'weight' => '-10',
         ),
       ),
