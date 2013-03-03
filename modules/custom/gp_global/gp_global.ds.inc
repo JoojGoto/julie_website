@@ -61,6 +61,32 @@ function gp_global_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|page|default';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'page';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_2col';
+  $ds_layout->settings = array(
+    'hide_empty_regions' => 0,
+    'hide_sidebars' => 0,
+    'regions' => array(
+      'left' => array(
+        0 => 'field_images',
+      ),
+      'right' => array(
+        0 => 'body',
+      ),
+    ),
+    'fields' => array(
+      'field_images' => 'left',
+      'body' => 'right',
+    ),
+    'classes' => array(),
+  );
+  $export['node|page|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|project|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'project';
