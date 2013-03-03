@@ -25,6 +25,11 @@ function gp_global_block_info() {
     'cache' => DRUPAL_CACHE_GLOBAL,
   );
 
+    $blocks['footer'] = array(
+    'info' => t('Pinterest for footer'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
   return $blocks;
 }
 
@@ -85,6 +90,24 @@ function gp_global_block_view_sidebar_projects_list() {
 
 
 /**
+ * Renders pinterest button in footer.
+ */
+function gp_global_block_view_footer() {
+  $block = array();
+  // The block title.
+  $block['subject'] = 'Pinterest for footer';
+  // The content of the block.
+  $block['content'] = '';
+  // Save ourselves some typing; we'll be concatenating a lot to this variable.
+  $content = &$block['content'];
+
+  $content .= '<a data-pin-do="buttonFollow" href="http://pinterest.com/joojgoto/">Julie Newton</a>';
+
+  return $block;
+}
+
+
+/**
  * Renders logo title and image.
  */
 function gp_global_block_view_logo() {
@@ -96,8 +119,8 @@ function gp_global_block_view_logo() {
   // Save ourselves some typing; we'll be concatenating a lot to this variable.
   $content = &$block['content'];
 
-  $content .= '<img src="/' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo-image.jpg" width="100%" height="auto">
-    <img src="/' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo.png" width="100%" height="auto">';
+  $content .= '<a href="/"><img src="/' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo-image.jpg" width="100%" height="auto">
+    <img src="/' . drupal_get_path('theme', 'gp_theme') . '/css/img/logo.png" width="100%" height="auto"></a>';
 
   return $block;
 }

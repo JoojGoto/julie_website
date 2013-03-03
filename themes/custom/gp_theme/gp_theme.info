@@ -66,8 +66,8 @@ scripts[] = js/jquery.carouFredSel-5.6.1-packed.js
 
 scripts[] = js/scripts.js
 
-scripts[] = js/coffeescript/domManipulation.class.coffee
-scripts[] = js/coffeescript/coffeescript.coffee
+; scripts[] = js/coffeescript/domManipulation.class.coffee
+; scripts[] = js/coffeescript/coffeescript.coffee
 
 
 ; THEME SETTINGS (DEFAULTS)
