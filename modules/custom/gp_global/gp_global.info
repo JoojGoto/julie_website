@@ -173,6 +173,7 @@ features[variable][] = default_nodes_main
 features[variable][] = field_bundle_settings_node__page
 features[variable][] = field_bundle_settings_node__project
 features[variable][] = file_temporary_path
+features[variable][] = image_jpeg_quality
 features[variable][] = menu_options_page
 features[variable][] = menu_options_project
 features[variable][] = menu_parent_page
