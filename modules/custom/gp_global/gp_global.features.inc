@@ -81,7 +81,7 @@ function gp_global_image_default_styles() {
   $styles['project_detail'] = array(
     'name' => 'project_detail',
     'effects' => array(
-      2 => array(
+      1 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -91,7 +91,7 @@ function gp_global_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '980',
+          'width' => '1000',
           'height' => '',
           'upscale' => 1,
         ),
